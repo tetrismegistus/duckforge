@@ -810,6 +810,71 @@
       "className": "FolderNode",
       "path": "load",
       "type": "FOLDER"
+    },
+    {
+      "children": [
+        {
+          "className": "ButtonNode",
+          "path": "save/export image",
+          "type": "TRANSIENT"
+        }
+      ],
+      "window": {
+        "posX": 220.0,
+        "posY": 22.0,
+        "closed": true,
+        "windowSizeX": 176.0
+      },
+      "className": "FolderNode",
+      "path": "save",
+      "type": "FOLDER"
+    },
+    {
+      "children": [
+        {
+          "valueFloat": 0.9166666865348816,
+          "valueFloatPrecision": 0.001,
+          "className": "SliderNode",
+          "path": "image/scale",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.0,
+          "valueFloatPrecision": 0.1,
+          "className": "SliderNode",
+          "path": "image/x",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.0,
+          "valueFloatPrecision": 0.1,
+          "className": "SliderNode",
+          "path": "image/y",
+          "type": "VALUE"
+        }
+      ],
+      "className": "FolderNode",
+      "path": "image",
+      "type": "FOLDER"
+    },
+    {
+      "children": [
+        {
+          "valueBoolean": true,
+          "className": "ToggleNode",
+          "path": "invert/enabled",
+          "type": "VALUE"
+        }
+      ],
+      "window": {
+        "posX": 154.0,
+        "posY": 220.0,
+        "closed": false,
+        "windowSizeX": 154.0
+      },
+      "className": "FolderNode",
+      "path": "invert",
+      "type": "FOLDER"
     }
   ],
   "window": {
