@@ -357,12 +357,6 @@
               "type": "FOLDER"
             }
           ],
-          "window": {
-            "posX": 440.0,
-            "posY": 22.0,
-            "closed": true,
-            "windowSizeX": 220.0
-          },
           "className": "FolderNode",
           "path": "options/windows",
           "type": "FOLDER"
@@ -717,12 +711,6 @@
           "type": "FOLDER"
         }
       ],
-      "window": {
-        "posX": 220.0,
-        "posY": 22.0,
-        "closed": true,
-        "windowSizeX": 198.0
-      },
       "className": "FolderNode",
       "path": "options",
       "type": "FOLDER"
@@ -796,8 +784,60 @@
     {
       "children": [
         {
+          "hexString": "FFFFFFFF",
+          "children": [
+            {
+              "className": "ColorPreviewNode",
+              "path": "init/background_color/preview",
+              "type": "TRANSIENT"
+            },
+            {
+              "valueFloat": 0.2142857313156128,
+              "valueFloatPrecision": 0.01,
+              "className": "HueNode",
+              "path": "init/background_color/hue",
+              "type": "VALUE"
+            },
+            {
+              "valueFloat": 0.0,
+              "valueFloatPrecision": 0.01,
+              "className": "SaturationNode",
+              "path": "init/background_color/sat",
+              "type": "VALUE"
+            },
+            {
+              "valueFloat": 1.0,
+              "valueFloatPrecision": 0.01,
+              "className": "BrightnessNode",
+              "path": "init/background_color/br",
+              "type": "VALUE"
+            },
+            {
+              "valueFloat": 1.0,
+              "valueFloatPrecision": 0.01,
+              "className": "AlphaNode",
+              "path": "init/background_color/alpha",
+              "type": "VALUE"
+            },
+            {
+              "className": "ColorPickerHexNode",
+              "path": "init/background_color/hex",
+              "type": "VALUE"
+            }
+          ],
+          "window": {
+            "posX": 462.0,
+            "posY": 22.0,
+            "closed": false,
+            "windowSizeX": 154.0
+          },
+          "className": "ColorPickerFolderNode",
+          "path": "init/background_color",
+          "type": "FOLDER"
+        },
+        {
           "className": "ButtonNode",
-          "path": "load/load image",
+          "path": "init/regenerate canvas",
           "type": "TRANSIENT"
         }
       ],
@@ -805,35 +845,17 @@
         "posX": 220.0,
         "posY": 22.0,
         "closed": false,
-        "windowSizeX": 154.0
+        "windowSizeX": 220.0
       },
       "className": "FolderNode",
-      "path": "load",
+      "path": "init",
       "type": "FOLDER"
     },
     {
       "children": [
         {
-          "className": "ButtonNode",
-          "path": "save/export image",
-          "type": "TRANSIENT"
-        }
-      ],
-      "window": {
-        "posX": 220.0,
-        "posY": 22.0,
-        "closed": false,
-        "windowSizeX": 176.0
-      },
-      "className": "FolderNode",
-      "path": "save",
-      "type": "FOLDER"
-    },
-    {
-      "children": [
-        {
-          "valueFloat": 0.550000011920929,
-          "valueFloatPrecision": 0.001,
+          "valueFloat": 1.0,
+          "valueFloatPrecision": 1.0,
           "className": "SliderNode",
           "path": "image/scale",
           "type": "VALUE"
@@ -860,20 +882,156 @@
     {
       "children": [
         {
-          "valueBoolean": true,
+          "className": "ButtonNode",
+          "path": "save/export image",
+          "type": "TRANSIENT"
+        }
+      ],
+      "window": {
+        "posX": 220.0,
+        "posY": 22.0,
+        "closed": false,
+        "windowSizeX": 176.0
+      },
+      "className": "FolderNode",
+      "path": "save",
+      "type": "FOLDER"
+    },
+    {
+      "children": [
+        {
+          "valueBoolean": false,
           "className": "ToggleNode",
           "path": "invert/enabled",
           "type": "VALUE"
         }
       ],
+      "className": "FolderNode",
+      "path": "invert",
+      "type": "FOLDER"
+    },
+    {
+      "children": [
+        {
+          "valueBoolean": true,
+          "className": "ToggleNode",
+          "path": "fbm/enabled",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 226.0,
+          "valueFloatPrecision": 1.0,
+          "className": "SliderNode",
+          "path": "fbm/scale",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.4400005042552948,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/gain",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 2.500000476837158,
+          "valueFloatPrecision": 0.1,
+          "className": "SliderNode",
+          "path": "fbm/lacunarity",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 16.0,
+          "valueFloatPrecision": 1.0,
+          "className": "SliderIntNode",
+          "path": "fbm/octaves",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 33.100006103515625,
+          "valueFloatPrecision": 1.0,
+          "className": "SliderNode",
+          "path": "fbm/warp scale",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.020099999383091927,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/warp freq X",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.030100015923380852,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/warp freq Y",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 1105.0,
+          "valueFloatPrecision": 1.0,
+          "className": "SliderNode",
+          "path": "fbm/warp offset X",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 1000.0,
+          "valueFloatPrecision": 1.0,
+          "className": "SliderNode",
+          "path": "fbm/warp offset Y",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.009999999776482582,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/warp freq DX",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.009999999776482582,
+          "valueFloatPrecision": 100.0,
+          "className": "SliderNode",
+          "path": "fbm/warp freq DY",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 3.40000057220459,
+          "valueFloatPrecision": 0.1,
+          "className": "SliderIntNode",
+          "path": "fbm/warp iterations",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.9700000286102295,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/brightness min R",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.9700000286102295,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/brightness min G",
+          "type": "VALUE"
+        },
+        {
+          "valueFloat": 0.9700000286102295,
+          "valueFloatPrecision": 0.01,
+          "className": "SliderNode",
+          "path": "fbm/brightness min B",
+          "type": "VALUE"
+        }
+      ],
       "window": {
-        "posX": 154.0,
-        "posY": 220.0,
+        "posX": 110.0,
+        "posY": 374.0,
         "closed": false,
         "windowSizeX": 154.0
       },
       "className": "FolderNode",
-      "path": "invert",
+      "path": "fbm",
       "type": "FOLDER"
     }
   ],
