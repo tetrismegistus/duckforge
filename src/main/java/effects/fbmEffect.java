@@ -5,6 +5,10 @@ import com.krab.lazy.ShaderReloader;
 import processing.core.PGraphics;
 import processing.opengl.PShader;
 
+import static processing.core.PConstants.HSB;
+import static processing.core.PConstants.RGB;
+
+
 public class fbmEffect implements Effect {
     private final String shaderPath = "shaders/fbm_frag.glsl";
     private int bgColor;
@@ -42,6 +46,7 @@ public class fbmEffect implements Effect {
 
         // RGB conversion of background color
         canvas.beginDraw();
+        canvas.colorMode(RGB, 255, 255, 255, 100);
         float r = canvas.red(bgColor) / 255f;
         float g = canvas.green(bgColor) / 255f;
         float b = canvas.blue(bgColor) / 255f;
